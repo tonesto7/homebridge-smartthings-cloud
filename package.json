@@ -1,47 +1,50 @@
 {
-  "name": "homebridge-smartthings-cloud",
-  "version": "1.0.0",
-  "main": "dist/main.js",
-  "types": "lib/index.d.js",
-  "repository": "https://github.com/kejadlen/homebridge-smartthings-cloud",
-  "author": "Alpha Chen",
-  "license": "MIT",
-  "keywords": [
-    "homebridge-plugin"
-  ],
-  "engines": {
-    "node": ">=8.10.0",
-    "homebridge": ">=0.4.50"
-  },
-  "scripts": {
-    "build": "tsc",
-    "dev": "DEBUG=* homebridge --debug --user-storage-path dev --plugin-path .",
-    "format": "prettier --write '@types/**/*' 'src/**/*' 'test/**/*'",
-    "lint": "eslint .",
-    "ngrok": "ngrok http $PORT",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@smartthings/smartapp": "^1.4.3",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "homebridge": "^0.4.50",
-    "http-signature": "^1.2.0",
-    "morgan": "^1.9.1"
-  },
-  "devDependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/express": "^4.17.0",
-    "@types/jest": "^24.0.17",
-    "@types/morgan": "^1.7.35",
-    "@types/node": "^12.0.8",
-    "eslint": "^5.16.0",
-    "hap-nodejs": "^0.4.53",
-    "jest": "^24.8.0",
-    "prettier": "^1.18.2",
-    "testdouble": "^3.12.3",
-    "ts-jest": "^24.0.2",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.2"
-  }
+    "name": "homebridge-smartthings-cloud",
+    "version": "1.0.0",
+    "main": "dist/main.js",
+    "types": "lib/index.d.js",
+    "repository": "https://github.com/kejadlen/homebridge-smartthings-cloud",
+    "author": "Alpha Chen",
+    "license": "MIT",
+    "keywords": [
+        "homebridge-plugin"
+    ],
+    "engines": {
+        "node": ">=8.10.0",
+        "homebridge": ">=0.4.50"
+    },
+    "scripts": {
+
+        "build": "tsc",
+        "dev": "DEBUG=* homebridge --debug --user-storage-path dev --plugin-path .",
+        "format": "prettier --write '@types/**/*' 'src/**/*' 'test/**/*'",
+        "format-win": "prettier --write './@types/**/*' './src/**/*' './test/**/*'",
+        "lint": "eslint .",
+        "ngrok": "ngrok http $PORT",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@smartthings/smartapp": "^1.4.3",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "homebridge": "^0.4.50",
+        "http-signature": "^1.2.0",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.17.0",
+        "@types/express": "^4.17.0",
+        "@types/jest": "^24.0.17",
+        "@types/morgan": "^1.7.35",
+        "@types/node": "^12.0.8",
+        "eslint": "^5.16.0",
+        "hap-nodejs": "^0.4.53",
+        "jest": "^24.8.0",
+        "prettier": "^1.18.2",
+        "testdouble": "^3.12.3",
+        "ts-jest": "^24.0.2",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.2",
+        "dts-gen": "^0.5.8"
+    }
 }

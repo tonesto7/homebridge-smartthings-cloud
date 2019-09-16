@@ -8,14 +8,25 @@ export default class Accessorizer {
     device: platform.Device,
     context: Context,
   ) {
+    let getTheService = Service => {
+      return accessory.getService(Service) || accessory.addService(Service);
+    };
     for (const component of device.components) {
+      getTheService(Service.AccessoryInformation).setCharacteristic(
+        Characteristic.Identify,
+        component.capabilities["Switch"] !== undefined,
+      );
+      // .setCharacteristic(Characteristic.FirmwareRevision, component.firmwareVersion)
+      // .setCharacteristic(Characteristic.Manufacturer, component.manufacturerName)
+      // .setCharacteristic(Characteristic.Model, `${toTitleCase(component.modelName)}`)
+      // .setCharacteristic(Characteristic.Name, component.name)
+      // .setCharacteristic(Characteristic.SerialNumber, component.serialNumber);
       for (const capability of component.capabilities) {
         switch (capability.id) {
           case "switch":
-            const service =
-              accessory.getService(Service.Switch) ||
-              accessory.addService(Service.Switch);
-            const characteristic = service.getCharacteristic(Characteristic.On);
+            let characteristic = getTheService(
+              Service.Switch,
+            ).getCharacteristic(Characteristic.On);
             characteristic.removeAllListeners("get");
             characteristic.removeAllListeners("set");
             characteristic.on("get", callback => {
