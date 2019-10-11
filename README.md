@@ -8,7 +8,9 @@ now.
 
 You should use [homebridge-smartthings-tonesto7][tonesto7] for now until this is complete. 
 It requires a lot of setup work at the moment and doesn't respond to device events at all.  
-I am actively building this out to replace my existing plugin [tonesto7]: https://github.com/tonesto7/homebridge-smartthings-tonesto7
+I am actively building this out to replace my existing plugin
+
+[tonesto7]: https://github.com/tonesto7/homebridge-smartthings-tonesto7
 
 I'm trying to build this one right.  I want to say thanks to @kejadlen for giving me his starter project to work off of.   I will make an amazing plugin out of it. 
 
