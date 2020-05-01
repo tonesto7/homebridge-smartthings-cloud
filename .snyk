@@ -1,0 +1,36 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@smartthings/smartapp > node-cache > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > request-promise-native > request-promise-core > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > @snyk/dep-graph > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > inquirer > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-config > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-mvn-plugin > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-nodejs-lockfile-parser > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-nuget-plugin > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > winston > async > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > @snyk/dep-graph > graphlib > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-go-plugin > graphlib > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-nodejs-lockfile-parser > graphlib > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
+    - '@smartthings/smartapp > snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash':
+        patched: '2020-05-01T08:20:25.304Z'
