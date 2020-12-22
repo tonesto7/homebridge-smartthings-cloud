@@ -1,2 +1,3 @@
 # homebridge-smartthings-cloud
-# DEPRECATED...  Please use `homebridge-smartthings`
+# DEPRECATED...  
+### Please use `homebridge-smartthings`
